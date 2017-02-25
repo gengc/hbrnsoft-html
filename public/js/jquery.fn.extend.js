@@ -1,5 +1,6 @@
 
 (function($){
+	
 	$.fn.extend({
 		getJson: function(url,params,func){
 			var _this = $(this);
@@ -24,6 +25,11 @@
 					//请求出错处理
 				}
 			});
+		},
+		message: {
+			alert : function(_d){
+			alert(_d);
+			 }
 		}
 	})
 })( jQuery );
